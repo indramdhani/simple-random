@@ -14,7 +14,11 @@ const calculate = () => {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express', result: calculate() });
+  res.render('index', {
+    title: 'Express',
+    result: calculate(),
+    result2: calculate(),
+  });
 });
 
 module.exports = router;
