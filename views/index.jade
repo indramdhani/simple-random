@@ -3,5 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p #{result}
-  p #{result2}
+  ul
+  each result in results
+    li= result

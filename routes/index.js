@@ -14,10 +14,14 @@ const calculate = () => {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
+  const results = [];
+  for (let index = 0; index < 100; index++) {
+    results.push(calculate());
+  }
+
   res.render('index', {
     title: 'Express',
-    result: calculate(),
-    result2: calculate(),
+    results: results,
   });
 });
 
