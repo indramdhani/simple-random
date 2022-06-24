@@ -16,9 +16,12 @@ export const options = {
 };
 
 export default function () {
-  const BASE_URL = 'https://q2hqyzmmud.ap-northeast-1.awsapprunner.com/'; // make sure this is not production
+  const BASE_URL = 'https://random.privynote.app'; // make sure this is not production
 
   const responses = http.batch([
+    ['GET', `${BASE_URL}`, null, { tags: { name: 'public' } }],
+    ['GET', `${BASE_URL}`, null, { tags: { name: 'public' } }],
+    ['GET', `${BASE_URL}`, null, { tags: { name: 'public' } }],
     ['GET', `${BASE_URL}`, null, { tags: { name: 'public' } }],
   ]);
 

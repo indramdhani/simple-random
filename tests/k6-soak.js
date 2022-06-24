@@ -9,7 +9,7 @@ export const options = {
   ],
 };
 
-const API_BASE_URL = 'https://q2hqyzmmud.ap-northeast-1.awsapprunner.com/';
+const API_BASE_URL = 'https://random.privynote.app/';
 
 export default function () {
   http.batch([['GET', `${API_BASE_URL}`]]);

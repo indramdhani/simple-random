@@ -13,7 +13,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get('https://q2hqyzmmud.ap-northeast-1.awsapprunner.com/');
+  const res = http.get('https://random.privynote.app/');
   check(res, { 'status was 200': (r) => r.status == 200 });
   sleep(1);
 }
