@@ -1,9 +1,9 @@
-# The manifest for the "simple-random" service.
+# The manifest for the "simple-random-app" service.
 # Read the full specification for the "Request-Driven Web Service" type at:
 # https://aws.github.io/copilot-cli/docs/manifest/rd-web-service/
 
 # Your service name will be used in naming your resources like log groups, App Runner services, etc.
-name: simple-random
+name: simple-random-app
 # The "architecture" of the service you're running.
 type: Request-Driven Web Service
 
@@ -27,10 +27,11 @@ cpu: 1024
 # Amount of memory in MiB used by the task.
 memory: 2048
 
-# # Connect your App Runner service to your environment's VPC.
+# Connect your App Runner service to your environment's VPC.
 # network:
 #   vpc:
 #     placement: private
+
 
 # Enable tracing for the service.
 # observability:
@@ -41,8 +42,9 @@ memory: 2048
 # variables:                    # Pass environment variables as key value pairs.
 #   LOG_LEVEL: info
 #
-tags: # Pass tags as key value pairs.
-  billing: simple-random
+# tags:                         # Pass tags as key value pairs.
+#   project: project-name
+
 # You can override any of the values defined above by environment.
 # environments:
 #   test:
